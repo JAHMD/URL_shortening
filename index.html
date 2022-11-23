@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | URL shortening</title>
+    <link rel="stylesheet" href="./public/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/f1c1c1e611.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./public/index.js" defer></script>
+  </head>
+  <body class="min-h-screen text-lg font-poppins relative overflow-hidden">
+    <header
+      class="container pt-10 pb-6 flex justify-between items-center text-sm relative"
+    >
+      <img
+        src="./images/logo.svg"
+        alt="Shortly image"
+        id="logo"
+        class="mr-10"
+      />
+      <button
+        id="menu-btn"
+        class="inline-block md:hidden text-xl text-neutral-GrayishViolet"
+      >
+        <i id="menu-icon" class="fa-solid fa-bars"></i>
+      </button>
+      <nav
+        id="navigators-section"
+        class="px-4 py-6 md:py-0 md:px-0 rounded-xl md:flex justify-between items-center flex-1 absolute md:relative top-full md:top-0 translate-x-[150%] md:translate-x-0 bg-primary-DarkViolet md:bg-transparent text-neutral-white z-10 transition-transform"
+      >
+        <ul
+          id="links"
+          class="pb-6 md:pb-0 border-b-[1px] border-neutral-GrayishViolet md:border-b-0 md:flex gap-6 text-center"
+        >
+          <li id="features" class="link">Features</li>
+          <li id="pricing" class="link">Pricing</li>
+          <li id="resources" class="link">Resources</li>
+        </ul>
+        <div
+          id="register-btns-container"
+          class="mt-4 md:mt-0 flex flex-col md:flex-row gap-4"
+        >
+          <button
+            id="login"
+            class="btn md:text-neutral-GrayishViolet hover:bg-neutral-GrayishViolet hover:text-neutral-white"
+            type="button"
+          >
+            Login
+          </button>
+          <button
+            id="sign-up"
+            class="btn md:text-neutral-white bg-primary-Cyan hover:bg-primary-activeCyan"
+            type="button"
+          >
+            Sign Up
+          </button>
+        </div>
+      </nav>
+    </header>
+    <div
+      class="attribution text-sm text-center absolute bottom-0 left-0 right-0"
+    >
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        class="text-sky-700 font-medium"
+        >Frontend Mentor</a
+      >. Coded by
+      <a
+        href="https://www.frontendmentor.io/profile/JAHMD"
+        target="_blank"
+        class="text-sky-700 font-medium"
+        >Ahmed Wael</a
+      >.
+    </div>
+  </body>
+</html>
