@@ -553,12 +553,8 @@ video {
   }
 }
 
-nav.active {
+#nav-window.active {
   transform: translateX(0);
-}
-
-.fixed{
-  position: fixed;
 }
 
 .absolute{
@@ -569,8 +565,16 @@ nav.active {
   position: relative;
 }
 
-.top-\[97px\]{
-  top: 97px;
+.right-8{
+  right: 2rem;
+}
+
+.top-11{
+  top: 2.75rem;
+}
+
+.top-full{
+  top: 100%;
 }
 
 .bottom-0{
@@ -583,14 +587,6 @@ nav.active {
 
 .right-0{
   right: 0px;
-}
-
-.top-full{
-  top: 100%;
-}
-
-.z-10{
-  z-index: 10;
 }
 
 .mr-10{
@@ -611,6 +607,10 @@ nav.active {
 
 .min-h-screen{
   min-height: 100vh;
+}
+
+.w-full{
+  width: 100%;
 }
 
 .flex-1{
@@ -646,12 +646,8 @@ nav.active {
   overflow: hidden;
 }
 
-.overflow-x-hidden{
-  overflow-x: hidden;
-}
-
-.rounded-xl{
-  border-radius: 0.75rem;
+.rounded-lg{
+  border-radius: 0.5rem;
 }
 
 .border-b-\[1px\]{
@@ -673,14 +669,8 @@ nav.active {
   background-color: hsl(180 66% 49% / var(--tw-bg-opacity));
 }
 
-.px-4{
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.py-6{
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+.p-8{
+  padding: 2rem;
 }
 
 .pt-10{
@@ -741,12 +731,6 @@ nav.active {
 
 /* npx tailwindcss -i ./src/styles.css -o ./public/styles.css --watch */
 
-@media (max-width: 768px) {
-  nav {
-    width: calc(100% - 4rem);
-  }
-}
-
 .btn{
   cursor: pointer;
   border-radius: 9999px;
@@ -805,14 +789,6 @@ nav.active {
 }
 
 @media (min-width: 768px){
-  .md\:relative{
-    position: relative;
-  }
-
-  .md\:top-0{
-    top: 0px;
-  }
-
   .md\:mt-0{
     margin-top: 0px;
   }
@@ -823,6 +799,10 @@ nav.active {
 
   .md\:hidden{
     display: none;
+  }
+
+  .md\:w-auto{
+    width: auto;
   }
 
   .md\:translate-x-0{
@@ -842,14 +822,8 @@ nav.active {
     background-color: transparent;
   }
 
-  .md\:py-0{
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
-
-  .md\:px-0{
-    padding-left: 0px;
-    padding-right: 0px;
+  .md\:p-0{
+    padding: 0px;
   }
 
   .md\:pb-0{
