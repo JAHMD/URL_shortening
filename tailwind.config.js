@@ -17,6 +17,7 @@ module.exports = {
           DarkViolet: "hsl(257, 27%, 26%)",
         },
         secondary: "hsl(0, 87%, 67%)",
+        sectionBg: "hsl(225, 33%, 95%)",
         neutral: {
           white: "hsl(0, 0%, 100%)",
           Gray: " hsl(0, 0%, 75%)",

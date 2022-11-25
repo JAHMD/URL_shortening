@@ -10,7 +10,7 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <title>Frontend Mentor | URL shortening</title>
+    <title>Shortly</title>
     <link rel="stylesheet" href="./public/styles.css" />
     <script
       src="https://kit.fontawesome.com/f1c1c1e611.js"
@@ -18,7 +18,7 @@
     ></script>
     <script src="./public/index.js" defer></script>
   </head>
-  <body class="min-h-screen text-lg font-poppins overflow-hidden">
+  <body class="min-h-screen text-lg font-poppin relative">
     <header class="">
       <nav
         id="navigators-section"
@@ -38,11 +38,11 @@
         </button>
         <div
           id="nav-window"
-          class="mt-4 p-8 md:p-0 rounded-lg flex-1 flex justify-between items-center flex-col md:flex-row top-full translate-x-[150%] md:translate-x-0 bg-primary-DarkViolet md:bg-transparent text-neutral-white transition-transform"
+          class="h-0 md:h-auto px-6 md:px-0 overflow-hidden mt-4 md:mt-0 rounded-lg flex-1 flex justify-between items-center flex-col md:flex-row top-full bg-primary-DarkViolet md:bg-transparent text-neutral-white transition-all"
         >
           <ul
             id="links"
-            class="w-full md:w-auto pb-6 md:pb-0 border-b-[1px] border-neutral-GrayishViolet md:border-b-0 md:flex gap-6 text-center"
+            class="w-full md:w-auto py-6 md:py-0 border-b-[1px] border-neutral-GrayishViolet md:border-b-0 md:flex gap-6 text-center"
           >
             <li id="features" class="link"><a href="#">Features</a></li>
             <li id="pricing" class="link"><a href="#">Pricing</a></li>
@@ -50,7 +50,7 @@
           </ul>
           <div
             id="register-btns-container"
-            class="w-full md:w-auto mt-4 md:mt-0 flex flex-col md:flex-row gap-4"
+            class="w-full md:w-auto py-6 md:py-0 flex flex-col md:flex-row gap-4"
           >
             <button
               id="login"
@@ -59,17 +59,164 @@
             >
               Login
             </button>
-            <button
-              id="sign-up"
-              class="btn md:text-neutral-white bg-primary-Cyan hover:bg-primary-activeCyan"
-              type="button"
-            >
+            <button id="sign-up" class="btn primary" type="button">
               Sign Up
             </button>
           </div>
         </div>
       </nav>
     </header>
+    <main>
+      <section
+        id="hero-section"
+        class="container flex flex-col md:flex-row gap-8 items-center justify-between"
+      >
+        <article id="about-the-page" class="text-center md:text-start">
+          <h1
+            class="mb-4 font-bold text-4xl md:text-6xl text-neutral-VeryDarkViolet"
+          >
+            More than just shorter links
+          </h1>
+          <p class="max-w-[400px] text-neutral-GrayishViolet">
+            Build your brand’s recognition and get detailed insights on how your
+            links are performing.
+          </p>
+          <button type="button" class="btn primary mt-6">Get Started</button>
+        </article>
+        <div class="img-holder order-first md:order-1">
+          <img
+            src="./images/illustration-working.svg"
+            alt="hero section's image"
+          />
+        </div>
+      </section>
+    </main>
+    <section
+      id="shorten-link-section"
+      class="mt-40 bg-neutral-GrayishViolet/20"
+    >
+      <div class="container relative">
+        <form
+          class="md:h-48 p-6 md:px-12 rounded-lg flex justify-between items-center flex-wrap flex-col md:flex-row gap-6 md:gap-6 bg-neutral-VeryDarkViolet relative -translate-y-1/2 overflow-hidden"
+        >
+          <input
+            id="shorten-link-field"
+            type="text"
+            class="w-full flex-1 rounded-lg py-4 px-8 outline-none caret-neutral-VeryDarkViolet text-neutral-VeryDarkViolet relative z-10"
+            placeholder="Shorten a link here..."
+          />
+          <label
+            id="error-msg"
+            for="shorten-link-field"
+            class="w-full text-secondary absolute left-0 pl-6 md:pl-12 translate-y-16 md:translate-y-12 italic z-10 hidden"
+          >
+            Please add a link
+          </label>
+          <input
+            id="shorten-link-btn"
+            type="button"
+            value="Shorten It!"
+            class="w-full md:w-auto py-4 px-8 primary rounded-lg relative z-10"
+          />
+
+          <img
+            src="./images/bg-shorten-desktop.svg"
+            alt="shorten link container background image"
+            class="w-full h-full absolute top-0 left-0"
+          />
+        </form>
+        <ul id="generated-links" class="py-4 space-y-4">
+          <li
+            class="px-6 py-4 rounded-lg flex md:items-center md:justify-between flex-col md:flex-row gap-4 bg-neutral-white"
+          >
+            <p
+              class="pb-2 border-b-[1px] md:border-b-0 text-neutral-VeryDarkViolet text-ellipsis overflow-hidden"
+            >
+              https://tailwindcss.com/docs/screens
+            </p>
+            <span
+              class="generated-link md:ml-auto inline-block text-primary-Cyan text-ellipsis overflow-hidden"
+              >tailwindcss</span
+            >
+            <button class="py-2 px-6 primary rounded-lg">Copy</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="statistics-section" class="py-20 bg-neutral-GrayishViolet/20">
+      <div class="container">
+        <header class="text-center mb-20">
+          <h2
+            class="section-title mb-4 font-bold text-3xl text-neutral-VeryDarkViolet"
+          >
+            Advanced Statistics
+          </h2>
+          <p class="max-w-[400px] mx-auto text-base text-neutral-GrayishViolet">
+            Track how your links are performing across the web with our advanced
+            statistics dashboard.
+          </p>
+        </header>
+        <div
+          id="statistics-container"
+          class="grid lg:grid-cols-3 md:justify-center gap-16 lg:gap-8 xl:gap-16 relative"
+        >
+          <span
+            class="h-4/5 w-2 lg:w-4/5 lg:h-2 absolute bg-primary-Cyan left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+          ></span>
+          <article
+            class="card md:-translate-x-10 lg:translate-x-0 lg:-translate-y-8"
+          >
+            <div class="img-holder h-12">
+              <img
+                src="./images/icon-brand-recognition.svg"
+                alt="brand recognition icon"
+              />
+            </div>
+            <h4 class="mb-4 text-xl font-bold text-neutral-VeryDarkViolet">
+              Brand recognition
+            </h4>
+            <p class="text-base leading-relaxed text-neutral-GrayishViolet">
+              Boost your brand recognition with each click. Generic links don’t
+              mean a thing. Branded links help instil confidence in your
+              content.
+            </p>
+          </article>
+          <article class="card">
+            <div class="img-holder h-12">
+              <img
+                src="./images/icon-detailed-records.svg"
+                alt="detailed records icon"
+              />
+            </div>
+            <h4 class="mb-4 text-xl font-bold text-neutral-VeryDarkViolet">
+              Detailed Records
+            </h4>
+            <p class="text-base leading-relaxed text-neutral-GrayishViolet">
+              Gain insights into who is clicking your links. Knowing when and
+              where people engage with your content helps inform better
+              decisions.
+            </p>
+          </article>
+          <article
+            class="card md:translate-x-10 lg:translate-x-0 lg:translate-y-8"
+          >
+            <div class="img-holder h-12">
+              <img
+                src="./images/icon-fully-customizable.svg"
+                alt="fully customizable icon"
+              />
+            </div>
+            <h4 class="mb-4 text-xl font-bold text-neutral-VeryDarkViolet">
+              Fully Customizable
+            </h4>
+            <p class="text-base leading-relaxed text-neutral-GrayishViolet">
+              Improve brand awareness and content discoverability through
+              customizable links, supercharging audience engagement.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
     <div
       class="attribution text-sm text-center absolute bottom-0 left-0 right-0"
     >

@@ -3,15 +3,27 @@
 @tailwind components;
 @tailwind utilities;
 /* npx tailwindcss -i ./src/styles.css -o ./public/styles.css --watch */
-
+::selection {
+  background-color: hsl(257, 27%, 26%);
+  color: white;
+}
 .btn {
   @apply py-2 px-6 rounded-full font-bold cursor-pointer transition-colors;
+}
+.primary {
+  @apply text-neutral-white bg-primary-Cyan hover:bg-primary-activeCyan transition-colors font-bold cursor-pointer;
 }
 .link {
   @apply py-2 rounded-lg font-bold hover:bg-neutral-Gray md:hover:bg-transparent md:text-neutral-GrayishViolet cursor-pointer md:hover:text-neutral-VeryDarkViolet transition-colors;
 }
 @layer components {
   #nav-window.active {
-    transform: translateX(0);
+    height: 293px;
   }
+}
+.card {
+  @apply max-w-xl px-6 pb-6 rounded-lg bg-neutral-white text-center sm:text-start relative;
+}
+.card img {
+  @apply w-16 p-3 mx-auto md:mx-0 rounded-full bg-primary-DarkViolet -translate-y-1/2;
 }
