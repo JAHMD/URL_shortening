@@ -81,7 +81,9 @@
             Build your brand’s recognition and get detailed insights on how your
             links are performing.
           </p>
-          <button type="button" class="btn primary mt-6">Get Started</button>
+          <button type="button" class="get-started-btn btn primary mt-6">
+            Get Started
+          </button>
         </article>
         <div class="img-holder order-first md:order-1">
           <img
@@ -125,7 +127,7 @@
             class="w-full h-full absolute top-0 left-0"
           />
         </form>
-        <ul id="generated-links" class="pt-24 pb-4 space-y-4">
+        <ul id="generated-links" class="pt-28 md:pt-20 pb-4 space-y-4">
           <li
             class="px-6 py-4 rounded-lg flex md:items-center md:justify-between flex-col md:flex-row gap-4 bg-neutral-white"
           >
@@ -245,22 +247,85 @@
         </div>
       </div>
     </section>
-    <div
-      class="attribution text-sm text-center absolute bottom-0 left-0 right-0"
+    <section
+      id="boost-your-links"
+      class="bg-primary-DarkViolet text-neutral-white relative"
     >
-      Challenge by
-      <a
-        href="https://www.frontendmentor.io?ref=challenge"
-        target="_blank"
-        class="text-sky-700 font-medium"
-        >Frontend Mentor</a
-      >. Coded by
-      <a
-        href="https://www.frontendmentor.io/profile/JAHMD"
-        target="_blank"
-        class="text-sky-700 font-medium"
-        >Ahmed Wael</a
-      >.
-    </div>
+      <img
+        src="./images/bg-boost-mobile.svg"
+        alt="boost section background"
+        class="absolute w-full h-full md:hidden"
+      />
+      <img
+        src="./images/bg-boost-desktop.svg"
+        alt="boost section background"
+        class="absolute w-full h-full hidden md:block"
+      />
+      <div
+        class="container py-12 flex justify-center items-center flex-col relative"
+      >
+        <h4 class="mb-6 font-bold text-2xl md:text-4xl">
+          Boost your links today
+        </h4>
+        <button class="get-started-btn btn primary">Get Started</button>
+      </div>
+    </section>
+    <footer class="bg-neutral-VeryDarkViolet text-neutral-GrayishViolet">
+      <div
+        class="container pt-16 pb-8 flex justify-between items-center md:items-start flex-col md:flex-row space-y-10 md:space-y-0 text-center md:text-start"
+      >
+        <h3 class="font-bold text-3xl text-neutral-white">Shortly</h3>
+        <ul class="features space-y-4 text-base">
+          <header class="text-neutral-white font-bold text-lg">Features</header>
+          <li class="footer-link">Link Shortening</li>
+          <li class="footer-link">Branded Links</li>
+          <li class="footer-link">Analytics</li>
+        </ul>
+        <ul class="resources space-y-4 text-base">
+          <header class="text-neutral-white font-bold text-lg">
+            Resources
+          </header>
+          <li class="footer-link">Blog</li>
+          <li class="footer-link">Developers</li>
+          <li class="footer-link">Support</li>
+        </ul>
+        <ul class="company space-y-4 text-base">
+          <header class="text-neutral-white font-bold text-lg">Company</header>
+          <li class="footer-link">About</li>
+          <li class="footer-link">Our Team</li>
+          <li class="footer-link">Careers</li>
+          <li class="footer-link">Contact</li>
+        </ul>
+        <ul class="social-media flex gap-4 items-center text-2xl">
+          <li class="cursor-pointer transition-colors hover:text-primary-Cyan">
+            <i class="fa-brands fa-facebook"></i>
+          </li>
+          <li class="cursor-pointer transition-colors hover:text-primary-Cyan">
+            <i class="fa-brands fa-twitter"></i>
+          </li>
+          <li class="cursor-pointer transition-colors hover:text-primary-Cyan">
+            <i class="fa-brands fa-pinterest"></i>
+          </li>
+          <li class="cursor-pointer transition-colors hover:text-primary-Cyan">
+            <i class="fa-brands fa-instagram"></i>
+          </li>
+        </ul>
+      </div>
+      <div class="attribution container text-sm text-center">
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          class="text-sky-700 font-medium"
+          >Frontend Mentor</a
+        >. Coded by
+        <a
+          href="https://www.frontendmentor.io/profile/JAHMD"
+          target="_blank"
+          class="text-sky-700 font-medium"
+          >Ahmed Wael</a
+        >.
+      </div>
+    </footer>
   </body>
 </html>
