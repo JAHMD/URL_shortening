@@ -31,3 +31,17 @@
 .footer-link {
   @apply cursor-pointer hover:text-primary-Cyan transition-colors;
 }
+@layer components {
+  #shorten-link-field.active {
+    @apply border-4 border-secondary placeholder-secondary text-secondary;
+  }
+}
+@layer components {
+  #generated-links li button.copied {
+    @apply bg-primary-DarkViolet;
+  }
+}
+
+.link-item {
+  @apply px-6 py-4 mt-4 rounded-lg flex md:items-center md:justify-between flex-col md:flex-row gap-4 bg-neutral-white;
+}
