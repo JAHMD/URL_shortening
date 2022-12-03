@@ -27,7 +27,6 @@
 .card img {
   @apply w-16 p-3 mx-auto md:mx-0 rounded-full bg-primary-DarkViolet -translate-y-1/2;
 }
-
 .footer-link {
   @apply cursor-pointer hover:text-primary-Cyan transition-colors;
 }
@@ -41,7 +40,6 @@
     @apply bg-primary-DarkViolet;
   }
 }
-
 .link-item {
   @apply px-6 py-4 mt-4 rounded-lg flex md:items-center md:justify-between flex-col md:flex-row gap-4 bg-neutral-white;
 }
