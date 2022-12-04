@@ -19,8 +19,8 @@
     <script src="./public/index.js" defer></script>
   </head>
   <body class="min-h-screen text-lg font-poppin relative">
-    <header class="">
-      <nav
+    <header>
+      <div
         id="navigators-section"
         class="container pt-10 pb-6 md:flex justify-between items-center text-sm relative"
       >
@@ -64,7 +64,7 @@
             </button>
           </div>
         </div>
-      </nav>
+      </div>
     </header>
     <main>
       <section
@@ -138,7 +138,7 @@
     </section>
     <section id="statistics-section" class="py-20 bg-neutral-GrayishViolet/20">
       <div class="container">
-        <header class="mt-2 text-center mb-20">
+        <div class="mt-2 text-center mb-20">
           <h2
             class="section-title mb-4 font-bold text-3xl text-neutral-VeryDarkViolet"
           >
@@ -148,7 +148,7 @@
             Track how your links are performing across the web with our advanced
             statistics dashboard.
           </p>
-        </header>
+        </div>
         <div
           id="statistics-container"
           class="grid lg:grid-cols-3 md:justify-center gap-16 lg:gap-8 xl:gap-16 relative"
@@ -165,9 +165,9 @@
                 alt="brand recognition icon"
               />
             </div>
-            <h4 class="mb-4 text-xl font-bold text-neutral-VeryDarkViolet">
+            <h3 class="mb-4 text-xl font-bold text-neutral-VeryDarkViolet">
               Brand recognition
-            </h4>
+            </h3>
             <p class="text-base leading-relaxed text-neutral-GrayishViolet">
               Boost your brand recognition with each click. Generic links don’t
               mean a thing. Branded links help instil confidence in your
@@ -181,9 +181,9 @@
                 alt="detailed records icon"
               />
             </div>
-            <h4 class="mb-4 text-xl font-bold text-neutral-VeryDarkViolet">
+            <h3 class="mb-4 text-xl font-bold text-neutral-VeryDarkViolet">
               Detailed Records
-            </h4>
+            </h3>
             <p class="text-base leading-relaxed text-neutral-GrayishViolet">
               Gain insights into who is clicking your links. Knowing when and
               where people engage with your content helps inform better
@@ -199,9 +199,9 @@
                 alt="fully customizable icon"
               />
             </div>
-            <h4 class="mb-4 text-xl font-bold text-neutral-VeryDarkViolet">
+            <h3 class="mb-4 text-xl font-bold text-neutral-VeryDarkViolet">
               Fully Customizable
-            </h4>
+            </h3>
             <p class="text-base leading-relaxed text-neutral-GrayishViolet">
               Improve brand awareness and content discoverability through
               customizable links, supercharging audience engagement.
@@ -227,9 +227,9 @@
       <div
         class="container py-12 flex justify-center items-center flex-col relative"
       >
-        <h4 class="mb-6 font-bold text-2xl md:text-4xl">
+        <h3 class="mb-6 font-bold text-2xl md:text-4xl">
           Boost your links today
-        </h4>
+        </h3>
         <button class="get-started-btn btn primary">Get Started</button>
       </div>
     </section>
@@ -237,28 +237,32 @@
       <div
         class="container pt-16 pb-8 flex justify-between items-center md:items-start flex-col md:flex-row space-y-10 md:space-y-0 text-center md:text-start"
       >
-        <h3 class="font-bold text-3xl text-neutral-white">Shortly</h3>
-        <ul class="features space-y-4 text-base">
-          <header class="text-neutral-white font-bold text-lg">Features</header>
-          <li class="footer-link">Link Shortening</li>
-          <li class="footer-link">Branded Links</li>
-          <li class="footer-link">Analytics</li>
-        </ul>
-        <ul class="resources space-y-4 text-base">
-          <header class="text-neutral-white font-bold text-lg">
-            Resources
-          </header>
-          <li class="footer-link">Blog</li>
-          <li class="footer-link">Developers</li>
-          <li class="footer-link">Support</li>
-        </ul>
-        <ul class="company space-y-4 text-base">
-          <header class="text-neutral-white font-bold text-lg">Company</header>
-          <li class="footer-link">About</li>
-          <li class="footer-link">Our Team</li>
-          <li class="footer-link">Careers</li>
-          <li class="footer-link">Contact</li>
-        </ul>
+        <h2 class="font-bold text-3xl text-neutral-white">Shortly</h2>
+        <div>
+          <h3 class="text-neutral-white font-bold text-lg mb-4">Features</h3>
+          <ul class="features space-y-4 text-base">
+            <li class="footer-link">Link Shortening</li>
+            <li class="footer-link">Branded Links</li>
+            <li class="footer-link">Analytics</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-neutral-white font-bold text-lg mb-4">Resources</h3>
+          <ul class="resources space-y-4 text-base">
+            <li class="footer-link">Blog</li>
+            <li class="footer-link">Developers</li>
+            <li class="footer-link">Support</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-neutral-white font-bold text-lg mb-4">Company</h3>
+          <ul class="company space-y-4 text-base">
+            <li class="footer-link">About</li>
+            <li class="footer-link">Our Team</li>
+            <li class="footer-link">Careers</li>
+            <li class="footer-link">Contact</li>
+          </ul>
+        </div>
         <ul class="social-media flex gap-4 items-center text-2xl">
           <li class="cursor-pointer transition-colors hover:text-primary-Cyan">
             <i class="fa-brands fa-facebook"></i>
