@@ -813,8 +813,9 @@ video {
   background-color: hsl(257 27% 26% / var(--tw-bg-opacity));
 }
 
-.bg-neutral-GrayishViolet\/20{
-  background-color: hsl(257 7% 63% / 0.2);
+.bg-\[\#eef0f6\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(238 240 246 / var(--tw-bg-opacity));
 }
 
 .bg-neutral-VeryDarkViolet{
